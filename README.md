@@ -18,7 +18,7 @@ yarn add hf-livechat
 
 ## CSS
 
-#livechat_button: 可以更改background 更改button的圖片。
+- livechat_button: 可以更改 background 更改 button 的圖片。
 
 ## Demo
 
