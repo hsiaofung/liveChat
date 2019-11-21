@@ -1,0 +1,16 @@
+#livechat_button {
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  z-index: 999;
+  background: url("../img/livechat.svg") #fff no-repeat center;
+  background-size: 70%;
+  width: 50px;
+  height: 50px;
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+#livechat-compact-container {
+  transform: translateY(70%) !important;
+}

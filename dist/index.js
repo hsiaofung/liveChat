@@ -1,0 +1,60 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+require("./css/LiveChatButton.css");
+
+var _reactLivechat = require("react-livechat");
+
+var _reactLivechat2 = _interopRequireDefault(_reactLivechat);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var LiveChatButton = function (_Component) {
+  _inherits(LiveChatButton, _Component);
+
+  function LiveChatButton() {
+    _classCallCheck(this, LiveChatButton);
+
+    return _possibleConstructorReturn(this, (LiveChatButton.__proto__ || Object.getPrototypeOf(LiveChatButton)).apply(this, arguments));
+  }
+
+  _createClass(LiveChatButton, [{
+    key: "show",
+
+    // show = () => {
+    //   window.LC_API.open_chat_window();
+    // };
+    value: function show() {
+      window.LC_API.open_chat_window();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement("div", { id: "livechat_button", onClick: this.show }),
+        _react2.default.createElement(_reactLivechat2.default, { license: 7274061 })
+      );
+    }
+  }]);
+
+  return LiveChatButton;
+}(_react.Component);
+
+exports.default = LiveChatButton;

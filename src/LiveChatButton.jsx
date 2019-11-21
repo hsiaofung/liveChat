@@ -3,9 +3,9 @@ import "./css/LiveChatButton.css";
 import LiveChat from "react-livechat";
 
 export default class LiveChatButton extends Component {
-  show = () => {
+  show() {
     window.LC_API.open_chat_window();
-  };
+  }
   render() {
     return (
       <div>
