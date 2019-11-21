@@ -35,10 +35,6 @@ var LiveChatButton = function (_Component) {
 
   _createClass(LiveChatButton, [{
     key: "show",
-
-    // show = () => {
-    //   window.LC_API.open_chat_window();
-    // };
     value: function show() {
       window.LC_API.open_chat_window();
     }
