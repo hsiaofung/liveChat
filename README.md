@@ -14,7 +14,8 @@ yarn add hf-livechat
 
 ## API
 
-無
+- license : livechat license ID
+- group: livechat group
 
 ## CSS
 

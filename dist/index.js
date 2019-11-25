@@ -41,11 +41,15 @@ var LiveChatButton = function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var _props = this.props,
+          license = _props.license,
+          group = _props.group;
+
       return _react2.default.createElement(
         "div",
         null,
         _react2.default.createElement("div", { id: "livechat_button", onClick: this.show }),
-        _react2.default.createElement(_reactLivechat2.default, { license: 7274061 })
+        _react2.default.createElement(_reactLivechat2.default, { license: license, group: group })
       );
     }
   }]);
