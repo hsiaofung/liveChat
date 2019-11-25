@@ -30,7 +30,7 @@ import LiveChatButton from "./LiveChatButton";
 function App() {
   return (
     <div className="App">
-      <LiveChatButton />
+      <LiveChatButton license={/*YOUR LICNESE*/} group={14} />
     </div>
   );
 }
