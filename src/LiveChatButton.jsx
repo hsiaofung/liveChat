@@ -7,10 +7,11 @@ export default class LiveChatButton extends Component {
     window.LC_API.open_chat_window();
   }
   render() {
+    const { license, group } = this.props;
     return (
       <div>
         <div id="livechat_button" onClick={this.show}></div>
-        <LiveChat license={7274061} />
+        <LiveChat license={license} group={group} />
       </div>
     );
   }

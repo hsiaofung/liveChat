@@ -4,7 +4,7 @@ import LiveChatButton from "./LiveChatButton";
 function App() {
   return (
     <div className="App">
-      <LiveChatButton />
+      <LiveChatButton license="7274061" group="14" />
     </div>
   );
 }
